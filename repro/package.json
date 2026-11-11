@@ -1,0 +1,14 @@
+{
+  "name": "lemma-vercel-stream-repro",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "before": "npm i --no-audit --no-fund --no-save @uselemma/tracing@7.12.5 && node repro.mjs",
+    "after": "npm i --no-audit --no-fund --no-save ./uselemma-tracing-7.12.6.tgz && node repro.mjs"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "4.0.114",
+    "ai": "7.0.169",
+    "zod": "4.6.7"
+  }
+}

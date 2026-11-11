@@ -1,0 +1,72 @@
+[
+  {
+    "case": "success",
+    "appSawError": false,
+    "modelCalls": 1,
+    "tracesSent": 1,
+    "rootError": null,
+    "rootOutput": "the full answer",
+    "generations": 1,
+    "tools": 0
+  },
+  {
+    "case": "HTTP 429",
+    "appSawError": true,
+    "modelCalls": 1,
+    "tracesSent": 1,
+    "rootError": "AI_APICallError: Rate limit reached",
+    "rootOutput": null,
+    "generations": 1,
+    "tools": 0
+  },
+  {
+    "case": "HTTP 500",
+    "appSawError": true,
+    "modelCalls": 1,
+    "tracesSent": 1,
+    "rootError": "AI_APICallError: The server had an error",
+    "rootOutput": null,
+    "generations": 1,
+    "tools": 0
+  },
+  {
+    "case": "connection dropped mid-answer",
+    "appSawError": false,
+    "modelCalls": 1,
+    "tracesSent": 1,
+    "rootError": "AI_APICallError: Failed to process successful response",
+    "rootOutput": null,
+    "generations": 1,
+    "tools": 0
+  },
+  {
+    "case": "error event mid-answer",
+    "appSawError": true,
+    "modelCalls": 1,
+    "tracesSent": 1,
+    "rootError": "AI SDK stream finished with finishReason: error",
+    "rootOutput": null,
+    "generations": 1,
+    "tools": 0
+  },
+  {
+    "case": "client aborts mid-answer",
+    "appSawError": false,
+    "modelCalls": 1,
+    "tracesSent": 1,
+    "rootError": "AI SDK run aborted: user pressed stop",
+    "rootOutput": null,
+    "generations": 1,
+    "tools": 0
+  },
+  {
+    "case": "HTTP 500 after a tool ran",
+    "appSawError": true,
+    "modelCalls": 2,
+    "tracesSent": 1,
+    "rootError": "AI_APICallError: The server had an error",
+    "rootOutput": null,
+    "generations": 2,
+    "tools": 1
+  }
+]
